@@ -1,9 +1,5 @@
 package com.theultimatelabs.finder;
 
-import android.app.*;
-import android.os.*;
-import android.util.*;
-import com.google.android.gcm.*;
 
 public class MainActivity extends Activity
 {
