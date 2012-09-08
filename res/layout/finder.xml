@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/sirenButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="1"
+        android:text="SIREN" />
+
+    <Button
+        android:id="@+id/bluetoothButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="BLUETOOTH SCAN" />
+
+    <Button
+        android:id="@+id/gpsButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="GPS" />
+
+    <Button
+        android:id="@+id/wifiButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="WIFI SCAN" />
+    
+    <Button
+        android:id="@+id/movementButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="MOVEMENT" />
+    
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="IMAGE" />
+    
+    <Button
+        android:id="@+id/microphoneButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="MICROPHONE" />
+
+    <Button
+        android:id="@+id/vibrateButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="VIBRATE" />
+    
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="MESSAGE" />
+    
+    <Button
+        android:id="@+id/ledButton"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="LED" />
+    
+</LinearLayout>

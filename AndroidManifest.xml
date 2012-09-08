@@ -8,8 +8,8 @@
         android:minSdkVersion="8" 
         android:targetSdkVersion="11" />
 		
-	<permission android:name="my_app_package.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-	<uses-permission android:name="my_app_package.permission.C2D_MESSAGE" /> 
+	<permission android:name="com.theultimatelabs.finder.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="com.theultimatelabs.finder.permission.C2D_MESSAGE" /> 
 	
 	<!-- App receives GCM messages. -->
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -19,6 +19,12 @@
 	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
 	<!-- Keeps the processor from sleeping when a message is received. -->
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 	
     <application
         android:icon="@drawable/ic_launcher"
@@ -32,7 +38,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:label="Findee"
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".FindeeActivity" >
+        </activity>
 		
+        <activity
+            android:label="Finder"
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".FinderActivity" >
+        </activity>
+        
 		<receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
 			<intent-filter>
 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -40,6 +58,8 @@
 				<category android:name="com.theultimatelabs.finder" />
 			</intent-filter>
 		</receiver>
+		
+		
 		<service android:name=".GCMIntentService" />
 		
     </application>
